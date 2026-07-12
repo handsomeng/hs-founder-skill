@@ -29,6 +29,7 @@
 | 「出框架」「这个选题怎么写」 | 读 `skills/ip-script-frame/SKILL.md` 照做 |
 | 「审稿」「看看这篇行不行」 | 读 `skills/ip-review/SKILL.md` 照做 |
 | 「更新人设」 | 读 `skills/ip-onboarding/SKILL.md` 里的「复访模式」照做 |
+| 「收纳」「存一下」「帮我找」「问知识库」「整理知识库」 | 读 `skills/ip-kb/SKILL.md` 照做 |
 
 他第一次使用、或者 `00-人设中枢/` 是空的时候，主动建议他先「开始采访」。
 
