@@ -33,3 +33,11 @@ vault-template/
 ```
 
 改 skill 逻辑直接编辑 `skills/*/SKILL.md`，改完 git commit。
+
+## 陌生电脑一句话安装
+
+前提：电脑装好 git 和 Codex CLI（或 Claude Code）。启动 AI 后原样粘贴：
+
+> 从 https://github.com/handsomeng/hs-founder-skill 克隆仓库，把里面的 vault-template 文件夹复制到我的家目录并改名为「我的IP」（不要放进 Downloads、Documents、Desktop），在这个新文件夹里执行 git init 并完成首次提交，然后删掉克隆下来的临时仓库。装完告诉我下一步怎么开始。
+
+装完退出会话，`cd ~/我的IP` 后重新启动 AI（必须从这个文件夹启动才能认到路由和 skill），说「开始采访」。
