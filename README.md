@@ -1,5 +1,18 @@
 # hs-founder-skill：创始人 IP 内容系统
 
+## 给 AI 的安装指令（用户说「安装 hs-founder-skill」时照此执行）
+
+用户只需要说：**「安装 https://github.com/handsomeng/hs-founder-skill 并配置我的 Obsidian 知识库」**。你（AI）看到这句话后自动完成以下全部步骤，过程中不问技术问题：
+
+1. 问用户一个问题：「知识库文件夹想叫什么名字？（直接回车默认叫 我的IP）」
+2. `git clone https://github.com/handsomeng/hs-founder-skill.git /tmp/hs-founder-skill`
+3. 把 `/tmp/hs-founder-skill/vault-template` 复制为 `~/<用户起的名字>`（家目录直接子目录，禁止放 Downloads / Documents / Desktop，macOS 会拦 AI 读写）
+4. 在新文件夹里 `git init && git add -A && git commit -m "init"`
+5. 删除 `/tmp/hs-founder-skill`
+6. 用大白话告诉用户剩下两个必须人工做的动作：
+   - 打开 Obsidian，「打开文件夹作为仓库」，选刚建的文件夹
+   - 退出当前 AI 会话，进入该文件夹重新启动（`cd ~/文件夹名` 后运行 codex 或 claude），然后说「开始采访」
+
 给不懂技术的老板搭的 AI 内容流水线。四个模块：采访建档 → 选题提取 → 脚本框架 → 审稿。skill 直接内置在知识库文件夹里，AGENTS.md（Codex）和 CLAUDE.md（Claude Code）双路由，零安装依赖。
 
 ## 明天装机步骤（操作人：瀚森哥）
@@ -34,10 +47,10 @@ vault-template/
 
 改 skill 逻辑直接编辑 `skills/*/SKILL.md`，改完 git commit。
 
-## 陌生电脑一句话安装
+## 陌生电脑安装
 
-前提：电脑装好 git 和 Codex CLI（或 Claude Code）。启动 AI 后原样粘贴：
+前提：电脑装好 git 和 Codex CLI（或 Claude Code）。启动 AI，说一句：
 
-> 从 https://github.com/handsomeng/hs-founder-skill 克隆仓库，把里面的 vault-template 文件夹复制到我的家目录并改名为「我的IP」（不要放进 Downloads、Documents、Desktop），在这个新文件夹里执行 git init 并完成首次提交，然后删掉克隆下来的临时仓库。装完告诉我下一步怎么开始。
+> 安装 https://github.com/handsomeng/hs-founder-skill 并配置我的 Obsidian 知识库
 
-装完退出会话，`cd ~/我的IP` 后重新启动 AI（必须从这个文件夹启动才能认到路由和 skill），说「开始采访」。
+AI 会读到本 README 开头的安装指令自动完成，最后引导你打开 Obsidian 和重启会话。
